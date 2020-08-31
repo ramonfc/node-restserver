@@ -39,7 +39,6 @@ let verificaAdmin_Role = (req, res, next) => {
 
     if (usuario.role === "ADMIN_ROLE") {
         next();
-        return;
     } else {
         return res.json({
             ok: false,
